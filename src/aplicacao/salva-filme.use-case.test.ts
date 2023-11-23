@@ -8,13 +8,13 @@ describe("Testando usecase de salvar filme",()=>{
             id:1,
             titulo:"test",
             descricao:"test",
-            foto:"test"
+            imagem:"test"
         }
         //Processamento]
         const bancoEmMemoria = new BancoEmMemoria()
         const salvaFilme = new SalvaFilme(bancoEmMemoria)
-        const {id, titulo, descricao, foto} = filme
-        const resultado = await salvaFilme.execute({id,titulo,descricao,foto})
+        const {id, titulo, descricao, imagem} = filme
+        const resultado = await salvaFilme.execute({id,titulo,descricao,imagem})
         //Resultado
         expect(resultado).toEqual(filme)
     })

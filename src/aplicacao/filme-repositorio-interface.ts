@@ -6,5 +6,5 @@ type FilmeDTO = {
     id: number,
     titulo: string,
     descricao: string,
-    foto: string
+    imagem: string
 }

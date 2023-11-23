@@ -18,5 +18,5 @@ type Filme = {
     id:number,
     titulo:string,
     descricao:string,
-    foto:string
+    imagem:string
 }

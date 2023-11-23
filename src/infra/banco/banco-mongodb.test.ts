@@ -10,7 +10,7 @@ describe("Banco MongoDB",()=>{
             id:1,
             titulo:"test",
             descricao:"test",
-            foto:"test",
+            imagem:"test",
         }
         const result = await bancoMongoDB.salvar(input)
         //bancoMongoDB.desconectar()
@@ -21,7 +21,7 @@ describe("Banco MongoDB",()=>{
             id:1,
             titulo:"test",
             descricao:"test",
-            foto:"test",
+            imagem:"test",
         }
         await bancoMongoDB.salvar(input)
         const result = await bancoMongoDB.listar()

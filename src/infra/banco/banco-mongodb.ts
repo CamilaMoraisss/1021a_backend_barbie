@@ -15,7 +15,7 @@ export default class BancoMongoDB implements FilmeRepositorioInterface{
                 _id: Number,
                 titulo: String,
                 descricao: String,
-                foto: String
+                imagem: String
             })
         )
     }
@@ -24,7 +24,7 @@ export default class BancoMongoDB implements FilmeRepositorioInterface{
             _id: filme.id,
             titulo: filme.titulo,
             descricao: filme.descricao,
-            foto: filme.foto
+            imagem: filme.imagem
         }
         try{
             const filmeModelo = new this.filmeModel({...filmeDTO})
@@ -43,7 +43,7 @@ export default class BancoMongoDB implements FilmeRepositorioInterface{
                 id: filme._id,
                 titulo: filme.titulo,
                 descricao: filme.descricao,
-                foto: filme.foto
+                imagem: filme.imagem
             }
         })
     }
@@ -55,11 +55,11 @@ type Filme = {
     id:number,
     titulo:string,
     descricao:string,
-    foto:string
+    imagem:string
 }
 type FilmeDTO = {
     _id:number,
     titulo:string,
     descricao:string,
-    foto:string
+    imagem:string
 }

@@ -10,13 +10,13 @@ describe("Listar filme",()=>{
                 id:1,
                 titulo:"test",
                 descricao:"test",
-                foto:"test",
+                imagem:"test",
             },
             {
                 id:2,
                 titulo:"test",
                 descricao:"test",
-                foto:"test",
+                imagem:"test",
             }
         ]
         const listarFilme = new ListarFilme(bancoEmMemoria)
@@ -28,13 +28,13 @@ describe("Listar filme",()=>{
             id:1,
             titulo:"test",
             descricao:"test",
-            foto:"test",
+            imagem:"test",
         })
         expect(result[1]).toEqual({
             id:2,
             titulo:"test",
             descricao:"test",
-            foto:"test",
+            imagem:"test",
         })
     })
 })
